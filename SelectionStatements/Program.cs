@@ -6,71 +6,43 @@ namespace SelectionStatements
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Enter your age");
-            //var myAge = Convert.ToInt32(Console.ReadLine());
-            //if (myAge >= 21)
-            //    {   
-            //    Console.WriteLine("you can drink wine");
-            //    }
-            //else if (myAge <= 3)
-            //    {
-            //        Console.WriteLine("You can drink a bottle.");
-            //    }
-            //else
-            //    {
-            //        Console.WriteLine("you can drink rootbeer");
-            //    }
-
-            //Console.WriteLine("what is your favorite car?");
-            //string favCar = Console.ReadLine();
-
-            //switch (favCar.ToLower())
-            //{
-            //    case "mustang":
-            //        Console.WriteLine("Mustangs are cool.");
-            //        break;
-            //    case "lambo":
-            //        Console.WriteLine("Lambo's are awesome.");
-            //        break;
-            //    case "tesla roadster":
-            //    case "tesla":
-            //        Console.WriteLine("Teslas are green!");
-            //        break;
-            //            case "corvette":
-            //        Console.WriteLine("corvettes rock");
-            //        break;
-            //    default:
-            //        Console.WriteLine("i dont know that car");
-            //        break;
-
-
-            //var r = new random();
-            //var favnumber = r.next(1, 10);
-            //console.writeline("guess my favorite number!")
-            //var userinput = int.parse(console.readline());
-            //if (userinput == 0)
-
+            //if statement practice
             //var r = new Random();
-            //var favNumber = r.Next(1, 10);
-            //Console.WriteLine("guess my favorite number!");
-            //var userInput = int.Parse(Console.ReadLine());
+            //var favNumber = r.Next(1, 1000);
+            //int userInput;
 
-            //while (userInput < favNumber)
+            //do
             //{
-            //    Console.WriteLine("nope try again");
-            //    break;
-            //}
-            //Console.WriteLine("That's right");
-            //}
+            //    Console.WriteLine("guess my favorite number!");
+            //    userInput = int.Parse(Console.ReadLine());
+            //    if (userInput > favNumber)
+            //    {
+            //        Console.WriteLine($"{userInput} is too high");
+            //    }
+            //    else if (userInput < favNumber)
+            //    {
+            //        Console.WriteLine($"{userInput} is too low");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"You guessed it!!!");
+            //    }
+            //} while (favNumber != userInput);
+
+
 
             Console.WriteLine("What is your favorite school subject?");
             var favSub = Console.ReadLine();
             switch (favSub.ToLower())
             {
                 case "math":
+                case "mathamatics":
                     Console.WriteLine("You can be a engineer!");
                     break;
                 case "science":
+                case "physics":
+                case "biology":
+                case "chemistry":
                     Console.WriteLine("You can be a researcher!");
                     break;
                 case "history":
@@ -80,10 +52,14 @@ namespace SelectionStatements
                     Console.WriteLine("You can be a painter");
                     break;
                 case "gym":
+                case "PE":
                     Console.WriteLine("You can be an athlete");
                     break;
                 case "english":
                     Console.WriteLine("You can be an author");
+                    break;
+                default:
+                    Console.WriteLine("I don't know that subject");
                     break;
 
 
@@ -91,3 +67,4 @@ namespace SelectionStatements
         }
     }
 }
+
